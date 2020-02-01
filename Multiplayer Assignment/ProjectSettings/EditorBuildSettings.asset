@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/bdevil2_scene1.unity
+    guid: eecd9b09013330a408fbddab949b0c15
   m_configObjects: {}

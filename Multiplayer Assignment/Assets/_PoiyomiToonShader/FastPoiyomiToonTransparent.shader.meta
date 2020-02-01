@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: dc3ac80689d25d340ae37449fe1a68fa
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _MainTex: {instanceID: 0}
+  - _BumpMap: {instanceID: 0}
+  - _AlphaMask: {instanceID: 0}
+  - _DetailNormalMap: {instanceID: 0}
+  - _DetailNormalMask: {instanceID: 0}
+  - _EmissionMap: {instanceID: 0}
+  - _EmissionMask: {instanceID: 0}
+  - _ToonRamp: {fileID: 2800000, guid: 7744a2dff3641604fa8b6601a055824c, type: 3}
+  - _AdditiveRamp: {fileID: 2800000, guid: 7744a2dff3641604fa8b6601a055824c, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
