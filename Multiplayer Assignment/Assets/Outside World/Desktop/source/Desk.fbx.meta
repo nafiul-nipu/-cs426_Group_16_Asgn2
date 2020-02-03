@@ -1,0 +1,215 @@
+fileFormatVersion: 2
+guid: 2c0f606c0c655e14b8dfb7bb23c7b214
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Area
+    100002: Area.001
+    100004: Area.002
+    100006: Area.003
+    100008: Area.004
+    100010: Books
+    100012: Boxes
+    100014: Camera
+    100016: Cell_phone
+    100018: //RootNode
+    100020: Desk
+    100022: Dish
+    100024: Eraser
+    100026: Keyboard_wire
+    100028: Mouse_wire
+    100030: Mousepad
+    100032: Notebook
+    100034: Notebook_wire
+    100036: Paper
+    100038: PC_Keyboard
+    100040: PC_Monitor
+    100042: PC_Mouse
+    100044: PC_Speaker
+    100046: Pen
+    400000: Area
+    400002: Area.001
+    400004: Area.002
+    400006: Area.003
+    400008: Area.004
+    400010: Books
+    400012: Boxes
+    400014: Camera
+    400016: Cell_phone
+    400018: Desk
+    400020: //RootNode
+    400022: Dish
+    400024: Eraser
+    400026: Keyboard_wire
+    400028: Mouse_wire
+    400030: Mousepad
+    400032: Notebook
+    400034: Notebook_wire
+    400036: Paper
+    400038: PC_Keyboard
+    400040: PC_Monitor
+    400042: PC_Mouse
+    400044: PC_Speaker
+    400046: Pen
+    2000000: Camera
+    2100000: Desk
+    2100002: Boxes
+    2100004: B_Tranaparency
+    2100006: Paper
+    2100008: PC_Speakers
+    2100010: PC_Monitor
+    2100012: PC_Screen
+    2100014: PC_Keyboard
+    2100016: Keyboard_light
+    2100018: WIre
+    2100020: PC_Mouse
+    2100022: Books
+    2100024: Notebook
+    2100026: Pen
+    2100028: Eraser
+    2100030: Cup
+    2100032: Cell phone
+    2100034: Cell_screen
+    2100036: Mousepad
+    2300000: Books
+    2300002: Boxes
+    2300004: Cell_phone
+    2300006: Desk
+    2300008: Dish
+    2300010: Eraser
+    2300012: Keyboard_wire
+    2300014: Mouse_wire
+    2300016: Mousepad
+    2300018: Notebook
+    2300020: Notebook_wire
+    2300022: Paper
+    2300024: PC_Keyboard
+    2300026: PC_Monitor
+    2300028: PC_Mouse
+    2300030: PC_Speaker
+    2300032: Pen
+    3300000: Books
+    3300002: Boxes
+    3300004: Cell_phone
+    3300006: Desk
+    3300008: Dish
+    3300010: Eraser
+    3300012: Keyboard_wire
+    3300014: Mouse_wire
+    3300016: Mousepad
+    3300018: Notebook
+    3300020: Notebook_wire
+    3300022: Paper
+    3300024: PC_Keyboard
+    3300026: PC_Monitor
+    3300028: PC_Mouse
+    3300030: PC_Speaker
+    3300032: Pen
+    4300000: Desk
+    4300002: Boxes
+    4300004: Paper
+    4300006: PC_Speaker
+    4300008: PC_Monitor
+    4300010: PC_Keyboard
+    4300012: Keyboard_wire
+    4300014: PC_Mouse
+    4300016: Mouse_wire
+    4300018: Books
+    4300020: Notebook
+    4300022: Notebook_wire
+    4300024: Pen
+    4300026: Eraser
+    4300028: Dish
+    4300030: Cell_phone
+    4300032: Mousepad
+    10800000: Area
+    10800002: Area.001
+    10800004: Area.002
+    10800006: Area.003
+    10800008: Area.004
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
