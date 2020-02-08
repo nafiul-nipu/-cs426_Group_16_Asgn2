@@ -9,8 +9,8 @@ public class PlayerMove : NetworkBehaviour
     //Array for Mesh Renderer of Children
     private Component[] Renderer;
 
-    float speed = 25.0f;
-    float rotationSpeed = 90;
+    float speed = 20.0f;
+    float rotationSpeed = 112.5f;
     float force = 200f;
 
     //Rigidbody rb;
@@ -65,14 +65,14 @@ public class PlayerMove : NetworkBehaviour
         {                                              
             // Increase Altitude
             //Debug.Log("Flying UP~!");
-            y = 1.0f * speed * Time.deltaTime;
+            y = 0.5f * speed * Time.deltaTime;
 
         }
         if (Input.GetKey(KeyCode.LeftShift))
         {
             // Lower Altitude
             //Debug.Log("Flying DOWN~!");
-            y = -1.0f * speed * Time.deltaTime;
+            y = -0.5f * speed * Time.deltaTime;
         }
 
         
