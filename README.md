@@ -11,7 +11,7 @@ Simply go to the 'Output' Folder and double-click on '_' (Later to be implemente
 
 ## How to Setup the Project
 * Download the github repo
-* Open UnityHub and 'Add' the project folder named '_' (Later to be implemented)
+* Open UnityHub and 'Add' the project folder named 'Multiplayer Assignment' (Later to be implemented)
 * Double-click and launch Project (Ignore warnings if saying it's an old project)
 * Go to Scenes and double-click on 'main'
 
