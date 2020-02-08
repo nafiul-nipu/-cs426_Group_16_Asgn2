@@ -13,14 +13,14 @@ public class PlayerMove : NetworkBehaviour
     float rotationSpeed = 90;
     float force = 200f;
 
-    Rigidbody rb;
-    Transform t;
+    //Rigidbody rb;
+    //Transform t;
 
     //Initializing (Replaces Start())
     public override void OnStartLocalPlayer()
     {
-        rb = GetComponent<Rigidbody>();
-        t = GetComponent <Transform>();
+        //rb = GetComponent<Rigidbody>();
+        //t = GetComponent <Transform>();
 
 
         Renderer[] rs = GetComponentsInChildren<Renderer>();
@@ -43,27 +43,47 @@ public class PlayerMove : NetworkBehaviour
         // ----------------------------------------------------
         //                  Basic Movement Set
         // ----------------------------------------------------
-        if (Input.GetKey(KeyCode.W))
-            rb.velocity += this.transform.forward * speed * Time.deltaTime;                 // Move Forwards
-        else if (Input.GetKey(KeyCode.S))                                                   // Move Backwards
-            rb.velocity -= this.transform.forward * speed * Time.deltaTime;
+        
+        //Movement for Forward / Backwards
+        var x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
 
-        if (Input.GetKey(KeyCode.D))
-            t.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);           // Rotate Right
-        else if (Input.GetKey(KeyCode.A))
-            t.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);          // Rotate Left
+        //Movement for Left / Right
+        var z = Input.GetAxis("Vertical") * speed * Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Space))                                                // Increase Altitude
-            rb.AddForce(t.up * force);
+        //Movement for Up / Down
+        var y = 0.0f;
+        
+        //Rotations
+        if (Input.GetKey(KeyCode.Q))
+            // Rotate Right
+            transform.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);
+        else if (Input.GetKey(KeyCode.E))
+            // Rotate Left
+            transform.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))                                            // Lower Altitude
-            rb.AddForce(t.up * -force);
+        if (Input.GetKey(KeyCode.Space))
+        {                                              
+            // Increase Altitude
+            //Debug.Log("Flying UP~!");
+            y = 1.0f * speed * Time.deltaTime;
 
+        }
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            // Lower Altitude
+            //Debug.Log("Flying DOWN~!");
+            y = -1.0f * speed * Time.deltaTime;
+        }
+
+        
+        //Main Movement 
+        transform.Translate(x, y, z);   
+        
         // ----------------------------------------------------
         //                  Interact Control
         // ----------------------------------------------------
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             //Implement Something to pick up object
             Debug.Log("Claiming Nest~!");
