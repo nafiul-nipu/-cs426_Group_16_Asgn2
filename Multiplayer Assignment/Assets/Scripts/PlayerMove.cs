@@ -9,16 +9,24 @@ public class PlayerMove : NetworkBehaviour
     //Array for Mesh Renderer of Children
     private Component[] Renderer;
 
-    float speed = 20.0f;
+    float speed = 5.0f;
     float rotationSpeed = 112.5f;
     float force = 200f;
+    public Camera camera;
 
     Rigidbody rb;
     //Transform t;
 
+    private void Awake()
+    {
+        camera.enabled = false;
+    }
+
+
     //Initializing (Replaces Start())
     public override void OnStartLocalPlayer()
     {
+        camera.enabled = true;
         rb = GetComponent<Rigidbody>();
         //t = GetComponent <Transform>();
 
@@ -36,8 +44,9 @@ public class PlayerMove : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isLocalPlayer)
+        if (!isLocalPlayer)     
             return;
+       
 
         // ----------------------------------------------------
         //                  Basic Movement Set
