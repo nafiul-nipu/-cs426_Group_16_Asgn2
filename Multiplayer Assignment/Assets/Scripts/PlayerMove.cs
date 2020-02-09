@@ -89,8 +89,10 @@ public class PlayerMove : NetworkBehaviour
             //Implement Something to pick up object
             Debug.Log("Claiming Nest~!");
         }
+    }
 
-
-
+    void SlowMovement()
+    {
+        speed = -10;
     }
 }
