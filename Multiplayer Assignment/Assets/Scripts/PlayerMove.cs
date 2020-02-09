@@ -13,13 +13,13 @@ public class PlayerMove : NetworkBehaviour
     float rotationSpeed = 112.5f;
     float force = 200f;
 
-    //Rigidbody rb;
+    Rigidbody rb;
     //Transform t;
 
     //Initializing (Replaces Start())
     public override void OnStartLocalPlayer()
     {
-        //rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
         //t = GetComponent <Transform>();
 
 
@@ -32,7 +32,6 @@ public class PlayerMove : NetworkBehaviour
         }
 
     }
-
 
     // Update is called once per frame
     void Update()
@@ -75,10 +74,12 @@ public class PlayerMove : NetworkBehaviour
             y = -0.5f * speed * Time.deltaTime;
         }
 
-        
         //Main Movement 
-        transform.Translate(x, y, z);   
-        
+        transform.Translate(x, y, z);
+        //rb.MovePosition(x,y,z);
+        //rb.velocity = new Vector3(x, y, z);
+
+
         // ----------------------------------------------------
         //                  Interact Control
         // ----------------------------------------------------
