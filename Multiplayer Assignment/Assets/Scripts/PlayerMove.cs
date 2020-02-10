@@ -44,6 +44,7 @@ public class PlayerMove : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log("MySpeed: " + speed);
         if (!isLocalPlayer)     
             return;
        
@@ -100,8 +101,8 @@ public class PlayerMove : NetworkBehaviour
         }
     }
 
-    void SlowMovement()
+    public void SlowMovement()
     {
-        speed = -10;
+        speed = 1.0f;
     }
 }

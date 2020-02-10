@@ -9,6 +9,9 @@ public class Target : MonoBehaviour
     private void OnCollisionEnter(Collision collision) {
         scoreManager.AddPoint();
 
+        Debug.Log("Collided with: ");
+        Debug.Log(collision.gameObject.name);
+
         Debug.Log("Collision Detected");
         Destroy(gameObject);
     }
