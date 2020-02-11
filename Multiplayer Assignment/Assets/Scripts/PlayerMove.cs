@@ -9,7 +9,7 @@ public class PlayerMove : NetworkBehaviour
     //Array for Mesh Renderer of Children
     private Component[] Renderer;
 
-    float speed = 5.0f;
+    float speed = 2.5f;
     float rotationSpeed = 112.5f;
     float force = 200f;
     public Camera camera;
