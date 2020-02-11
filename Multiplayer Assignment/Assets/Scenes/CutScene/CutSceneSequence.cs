@@ -24,6 +24,7 @@ public class CutSceneSequence : MonoBehaviour
         Camera2.SetActive(false);
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene(3);
+        // SceneManager.LoadScene(5);
         // Camera3.SetActive(false);
     }
 }
