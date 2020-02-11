@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
-    public int maxScore = 9;
+    int maxScore = 5;
 
     int score;
 
@@ -22,19 +23,19 @@ public class Score : MonoBehaviour
     {
         score++;
 
-        if (score != maxScore)
+        if (score < maxScore){
+            print(score);
             scoreText.text = "Score: " + score;
-        else
+        }else if (score == maxScore){
+            SceneManager.LoadScene("Win Scene");
             scoreText.text = "Game!";
+        }
+            
     }
 
     public void DeductPoint()
     {
         score--;
-
-        if (score != 0)
-            scoreText.text = "Score: " + score;
-        else
-            scoreText.text = "Score: 0";
+        scoreText.text = "Score: " + score;
     }
 }
