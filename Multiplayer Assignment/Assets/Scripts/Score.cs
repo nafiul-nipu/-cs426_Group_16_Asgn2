@@ -27,4 +27,14 @@ public class Score : MonoBehaviour
         else
             scoreText.text = "Game!";
     }
+
+    public void DeductPoint()
+    {
+        score--;
+
+        if (score != 0)
+            scoreText.text = "Score: " + score;
+        else
+            scoreText.text = "Score: 0";
+    }
 }

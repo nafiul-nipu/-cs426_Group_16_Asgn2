@@ -37,7 +37,20 @@
           <e p="PoiyomiToonCutout.shader" t="Include" />
           <e p="PoiyomiToonTransparent.shader" t="Include" />
         </e>
+        <e p="Menues" t="Include">
+          <e p="Instructions.cs" t="Include" />
+          <e p="JumpToMainMenu.cs" t="Include" />
+          <e p="MainMenu.cs" t="Include" />
+          <e p="SwitchSongs.cs" t="Include" />
+        </e>
+        <e p="Scenes" t="Include">
+          <e p="CutScene" t="Include">
+            <e p="CutSceneSequence.cs" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
+          <e p="Death.cs" t="Include" />
+          <e p="Deduction.cs" t="Include" />
           <e p="PlayerMove.cs" t="Include" />
           <e p="Score.cs" t="Include" />
           <e p="Slow.cs" t="Include" />
