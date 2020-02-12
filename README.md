@@ -62,10 +62,10 @@ Boundaries:
 Outcome:
  - Winner / Loser game 
  
-## Executive Summary:
+## Environmental Story-telling:
 The animation at the beginning of the game also gives the player a hint of the game environment. Where the main game environment (i.e. the CPU) located. It takes the player from the Outside world to the game world.
 Players also can get some hints from the billboards scattered around the game scene. 
  
-Summary:
+## Summary:
  The players are playing as a bird inside a custom-built desktop computer. The computer is located in Max's Room.
  The players' objective is to find five nests to win the game and avoid traps that looks similar to the nests. 
