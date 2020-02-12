@@ -14,6 +14,15 @@ public class CutSceneSequence : MonoBehaviour
         StartCoroutine(TheSequence());
         
     }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Escape was pressed");
+            SceneManager.LoadScene(3);
+        }
+    }
+
 
     IEnumerator TheSequence(){
         yield return new WaitForSeconds(4);

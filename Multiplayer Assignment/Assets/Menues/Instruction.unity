@@ -361,10 +361,10 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Control:\n//Movement\r\n'W' - Move Forwards\r\n'A' - Move Left\r\n'S' -
     Move Backwards\r\n'D' - Move Right\r\n\r\n//Rotate\r\n'Q' - Rotate Left\r\n'E'
-    - Rotate Right\r\n\r\n//Fly Up / Down\r\n'Space' - Fly Up\r\n'Shift' - Fly Down\r\n\r\n//Interact
-    with Nest\r\n'F' - Pick up Nest\n\nObjective:\nThis is co-operative game. \nPlayers
-    need to collect the nests scatter around the world. \nCollect 5 Nests to win the
-    game\nP.S. Beaware from the traps"
+    - Rotate Right\r\n\r\n//Fly Up / Down\r\n'Space' - Fly Up\r\n'Shift' - Fly Down\r\n\n'Esc'
+    - stop the animation\n\r\n//Interact with Nest\r\n'F' - Pick up Nest\n\nObjective:\nThis
+    is co-operative game. \nPlayers need to collect the nests scatter around the world.
+    \nCollect 5 Nests to win the game\nP.S. Beaware from the traps"
 --- !u!222 &800882698
 CanvasRenderer:
   m_ObjectHideFlags: 0
